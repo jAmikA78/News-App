@@ -1,0 +1,1 @@
+double fSize = 25;

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newsapp/theme/appTheme.dart';
 import 'package:newsapp/views/homePage.dart';
 
 void main(List<String> args) {
@@ -10,8 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: firstScreen(),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: const homePage(),
+      theme: appTheme(),
     );
   }
 }
