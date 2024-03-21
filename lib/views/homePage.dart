@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newsapp/views/Widgets/CatagoryCardList.dart';
 
 class homePage extends StatelessWidget {
   const homePage({super.key});
@@ -20,18 +21,7 @@ class homePage extends StatelessWidget {
           ],
         ),
       ),
-      body: Container(
-        height: 85,
-        width: 150,
-        decoration: BoxDecoration(
-          color: Colors.blueGrey,
-          borderRadius: BorderRadius.circular(16),
-        ),
-        child: const Center(
-            child: Text(
-          'data',
-        )),
-      ),
+      body: catagoryCardList(),
     );
   }
 }
