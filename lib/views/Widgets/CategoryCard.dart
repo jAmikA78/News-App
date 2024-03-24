@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:newsapp/const/constant.dart';
 
-class categoryCard extends StatelessWidget {
+// ignore: must_be_immutable
+class CategoryCard extends StatelessWidget {
   String imgPath;
   String cardTitle;
-  categoryCard({required this.imgPath, required this.cardTitle});
+  CategoryCard({super.key, required this.imgPath, required this.cardTitle});
   @override
   Widget build(BuildContext context) {
     return Padding(

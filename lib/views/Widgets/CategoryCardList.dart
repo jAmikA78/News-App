@@ -43,7 +43,7 @@ class CategoryCardList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         itemCount: categoryList.length,
         itemBuilder: (context, index) {
-          return categoryCard(
+          return CategoryCard(
             imgPath: categoryList[index].image,
             cardTitle: categoryList[index].categoryName,
           );
