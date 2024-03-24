@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:newsapp/const/constant.dart';
 
-class catagoryCard extends StatelessWidget {
+class categoryCard extends StatelessWidget {
   String imgPath;
   String cardTitle;
-  catagoryCard({required this.imgPath, required this.cardTitle});
+  categoryCard({required this.imgPath, required this.cardTitle});
   @override
   Widget build(BuildContext context) {
     return Padding(
