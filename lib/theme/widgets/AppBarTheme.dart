@@ -5,7 +5,7 @@ AppBarTheme appBarTheme() {
   return AppBarTheme(
       elevation: 0.0,
       centerTitle: true,
-      color: Colors.amber,
+      color: Colors.transparent,
       titleTextStyle: TextStyle(
         fontSize: fSize + 10,
         color: Colors.black,

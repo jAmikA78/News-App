@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newsapp/views/Widgets/CategoryCardList.dart';
+import 'package:newsapp/views/Widgets/MainAppBar.dart';
 import 'package:newsapp/views/Widgets/NewsCardList.dart';
 
 class homePage extends StatelessWidget {
@@ -8,20 +9,7 @@ class homePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'News',
-            ),
-            Text(
-              'App',
-              style: TextStyle(color: Colors.blue),
-            ),
-          ],
-        ),
-      ),
+      appBar: mainAppBaer(),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: CustomScrollView(
