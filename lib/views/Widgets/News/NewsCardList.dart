@@ -9,7 +9,10 @@ class NewsCardList extends StatelessWidget {
     return SliverList(
       delegate: SliverChildBuilderDelegate(
         (context, index) {
-          return NewsCard();
+          return const Padding(
+            padding: EdgeInsets.only(top: 8.0),
+            child: NewsCard(),
+          );
         },
       ),
     );
