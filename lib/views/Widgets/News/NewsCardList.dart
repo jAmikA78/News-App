@@ -6,16 +6,12 @@ class NewsCardList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      physics: const NeverScrollableScrollPhysics(),
-      shrinkWrap: true,
-      itemCount: 10,
-      itemBuilder: (context, index) {
-        return const Padding(
-          padding: EdgeInsets.only(top: 22.0),
-          child: NewsCard(),
-        );
-      },
+    return SliverList(
+      delegate: SliverChildBuilderDelegate(
+        (context, index) {
+          return NewsCard();
+        },
+      ),
     );
   }
 }

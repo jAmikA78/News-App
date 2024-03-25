@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:newsapp/views/Widgets/CategoryCardList.dart';
-import 'package:newsapp/views/Widgets/MainAppBar.dart';
-import 'package:newsapp/views/Widgets/NewsCardList.dart';
+import 'package:newsapp/views/Widgets/Category/CategoryCardList.dart';
+import 'package:newsapp/views/Widgets/Main/MainAppBar.dart';
+import 'package:newsapp/views/Widgets/News/NewsCardList.dart';
 
 class homePage extends StatelessWidget {
   const homePage({super.key});
@@ -18,21 +18,10 @@ class homePage extends StatelessWidget {
             SliverToBoxAdapter(
               child: CategoryCardList(),
             ),
-            const SliverToBoxAdapter(
-              child: SizedBox(height: 22),
-            ),
-            const SliverToBoxAdapter(
-              child: NewsCardList(),
-            ),
+            const SliverToBoxAdapter(child: SizedBox(height: 22)),
+            const NewsCardList(),
           ],
         ),
-        // Column(
-        //   children: [
-        //     CategoryCardList(),
-        //     const SizedBox(height: 22),
-        //     const Expanded(child: NewsCardList()),
-        //   ],
-        // ),
       ),
     );
   }
